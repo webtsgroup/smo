@@ -1,0 +1,226 @@
+/*
+IMPORTANT:
+In order to preserve the uniform grid appearance, all cell styles need to have padding, margin and border sizes.
+No built-in (selected, editable, highlight, flashing, invalid, loading, :focus) or user-specified CSS
+classes should alter those!
+*/
+
+.slick-header.ui-state-default, .slick-headerrow.ui-state-default {
+  width: 100%;
+  overflow: hidden;
+  border-left: 0px;
+}
+
+.slick-header-columns, .slick-headerrow-columns {
+  position: relative;
+  white-space: nowrap;
+  cursor: default;
+  overflow: hidden;
+}
+
+.slick-header-column.ui-state-default {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  height: 16px;
+  line-height: 16px;
+  margin: 0;
+  padding: 4px;
+  border-right: 1px solid silver;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  float: left;
+  background:#49769C;
+  border:1px solid #5C84A7;
+  color : #FFF;
+  padding:5px 10px;
+  padding-top:8px;
+  height:32px;
+}
+
+.slick-headerrow-column.ui-state-default {
+  padding: 4px;
+}
+.ui-state-default.slick-headerrow-column {
+  border-bottom:1px solid silver;
+}
+
+.slick-header-column-sorted {
+  font-style: italic;
+}
+
+.slick-sort-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  margin-left: 4px;
+  margin-top: 6px;
+  float: right;
+}
+
+.slick-sort-indicator-desc {
+  background: url(images/sort-desc.gif);
+}
+
+.slick-sort-indicator-asc {
+  background: url(images/sort-asc.gif);
+}
+
+.slick-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  display: block;
+  cursor: col-resize;
+  width: 4px;
+  right: 0px;
+  top: 0;
+  height: 100%;
+}
+
+.slick-sortable-placeholder {
+  background: silver;
+}
+
+.grid-canvas {
+  position: relative;
+  outline: 0;
+}
+
+.slick-row.ui-widget-content, .slick-row.ui-state-active {
+  position: absolute;
+  border: 0px;
+  width: 100%;
+}
+
+.slick-cell, .slick-headerrow-column {
+  position: absolute;
+  border: 1px solid transparent;
+  border-right: 1px dotted silver;
+  border-bottom-color: silver;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  z-index: 1;
+  padding: 1px 2px 2px 1px;
+  margin: 0;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.slick-group {
+}
+
+.slick-group-toggle {
+  display: inline-block;
+}
+
+.slick-cell.highlighted {
+  background: lightskyblue;
+  background: rgba(0, 0, 255, 0.2);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.slick-cell.flashing {
+  border: 1px solid red !important;
+}
+
+.slick-cell.editable {
+  z-index: 11;
+  overflow: visible;
+  background: white;
+  /*border-color: black;*/
+  border-style: solid;
+}
+
+.slick-cell:focus {
+  outline: none;
+}
+
+.slick-reorder-proxy {
+  display: inline-block;
+  background: blue;
+  opacity: 0.15;
+  filter: alpha(opacity = 15);
+  cursor: move;
+}
+
+.slick-reorder-guide {
+  display: inline-block;
+  height: 2px;
+  background: blue;
+  opacity: 0.7;
+  filter: alpha(opacity = 70);
+}
+
+.slick-selection {
+  z-index: 10;
+  position: absolute;
+  border: 2px dashed black;
+}
+
+/*----------------CUSTOM----------------------*/
+.slick-headerrow-column {
+	height:33px;
+}
+.slick-cell{
+	vertical-align:middle;
+	display:table-cell;
+	padding-left:5px;
+}
+.r0{
+	border-left:1px solid silver;
+}
+.divCenter{
+	text-align:center;
+}
+.divCenter .btn{
+	margin-top:-5px;
+}
+.divCenter.check{
+	font-size:18px;
+	color: #090;
+}
+.divCenter .glyphicon-edit{
+	color:#428BCA;
+}
+.divCenter .view{
+	color:#999;
+}
+.divCenter .glyphicon-remove{
+	color:#F00;
+}
+.divCenter i.fa, .divCenter i.glyphicon{
+	padding-right: 0 !important;
+}
+input{
+	outline:none;
+	border:none;
+}
+.slick-headerrow-columns{
+	height:33px !important;
+	/*border-bottom:1px solid #CCC;*/
+}
+.slick-headerrow-column input{
+	width:100%;
+	border:1px solid #CCC;
+	padding: 2px 5px;
+}
+.slick-cell input{
+	width:100%;
+	height:100%;
+}
+.slick-cell.editable{
+	background: url("images/IconEdit.png") no-repeat right 8px;
+    padding-right: 24px;   
+}
+.slick-cell.loading{
+	background: url("../../img/ajax-loader.gif") no-repeat 2px center;
+    padding-left: 20px;
+}

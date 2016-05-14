@@ -1,0 +1,53 @@
+msgid  "Title Page"
+msgstr "SMO 1.0"
+
+msgid  "Configuration"
+msgstr "Cấu hình hệ thống"
+
+msgid  "Group"
+msgstr "Nhóm"
+
+msgid  "Groups Control"
+msgstr "Quản lý Nhóm"
+
+msgid  "Import"
+msgstr "Import"
+
+msgid  "Edit"
+msgstr "Sửa"
+
+msgid  "Delete"
+msgstr "Xóa"
+
+msgid "View Member"
+msgstr "Danh sách thành viên"
+
+msgid "Control"
+msgstr "Quản lý"
+
+msgid "Action"
+msgstr "Thao tác"
+
+msgid  "Order"
+msgstr "STT"
+
+msgid  "Name"
+msgstr "Tên"
+
+msgid  "Phone"
+msgstr "Điện thoại
+
+msgid  "First Name"
+msgstr "Tên"
+
+msgid  "Last Name"
+msgstr "Họ"
+
+msgid  "Active"
+msgstr "Kích hoạt"
+
+msgid "Account Lists"
+msgstr "Danh sách Tài khoản"
+
+msgid "Add new"
+msgstr "Thêm"
